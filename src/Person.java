@@ -36,6 +36,7 @@ public class Person {
      */
     public String toString() {
         DateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
-        return family + " " + name + " " + middleName + " " + formatter.format(birthDay) + " " + phoneNumber + " " + gender;
+        return "<" + family + "> <" + name + "> <" + middleName + "> <" + formatter.format(birthDay) +
+                "> <" + phoneNumber + "> <" + gender + ">";
     }
 }
